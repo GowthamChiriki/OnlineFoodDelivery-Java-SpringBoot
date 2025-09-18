@@ -1,4 +1,8 @@
 package com.fooddelivery.enums;
 
-public class UserRole {
+public enum UserRole {
+    ROLE_CUSTOMER,
+    ROLE_RESTAURANT,
+    ROLE_DELIVERY,
+    ROLE_ADMIN
 }
