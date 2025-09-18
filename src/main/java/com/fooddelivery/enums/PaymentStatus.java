@@ -1,4 +1,8 @@
 package com.fooddelivery.enums;
 
-public class PaymentStatus {
+public enum PaymentStatus {
+    INITIATED,
+    SUCCESS,
+    FAILED,
+    REFUNDED
 }
