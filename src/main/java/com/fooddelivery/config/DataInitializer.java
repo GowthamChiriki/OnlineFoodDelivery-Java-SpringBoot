@@ -1,6 +1,6 @@
 package com.fooddelivery.config;
 
-import com.fooddelivery.entity.user.User;
+import com.fooddelivery.entity.user.UserEntity;
 import com.fooddelivery.repository.UserRepository;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.context.annotation.Bean;
@@ -12,7 +12,7 @@ public class DataInitializer {
     CommandLineRunner init(UserRepository userRepository) {
         return args -> {
             if (userRepository.count() == 0) {
-                User u = User.builder()
+                UserEntity u = UserEntity.builder()
                         .email("alice@example.com")
                         .name("Alice")
                         .password("secret") // not hashed for demo only
